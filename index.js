@@ -102,7 +102,7 @@ function bannerScroll() {
 
 
 function profileScroll() {
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 50) {
     document.getElementById("About-Me").style.backgroundColor = 'rgb(250, 250, 151)';
     document.getElementById("profile").style.transform = "scale(1.05)";
     
