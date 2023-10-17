@@ -88,12 +88,30 @@ function sendEmail() {
   }
 
 
-  //lets user know that they are leaving the site
+//onscroll
+window.onscroll = function() {bannerScroll(); profileScroll()};
 
-  function leaveSite(){
-    var leaveSite = confirm('Leave the page?');
-    if (leaveSite){
-        
-    }
+function bannerScroll() {
+  if (document.documentElement.scrollTop > 5) {
+    document.getElementById("hero-banner").style.filter = "brightness(0.5)";
+  } else {
+    document.getElementById("hero-banner").style.filter = "brightness(1)";
+  }
+}
+
+
+
+function profileScroll() {
+  if (document.documentElement.scrollTop > 825) {
+    document.getElementById("About-Me").style.backgroundColor = 'rgb(250, 250, 151)';
+    document.getElementById("profile").style.transform = "scale(1.05)";
+    
 
   }
+  
+
+    else {
+    document.getElementById("About-Me").style.backgroundColor = "white";
+    document.getElementById("profile").style.transform = "scale(1.00)"
+  }
+}
