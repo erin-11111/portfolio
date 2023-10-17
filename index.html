@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geri's Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/geribrand.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
+    <!-- EmailJs -->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("C6yzU_OZ5tXWXHQgc");
+      })();
+    </script>
+</head>
+<body>
+    <header>
+        <!-- NavBar -->
+        <div id="navbar">
+            <div id="burger">
+                <img src="./images/menu.png" alt="burger-menu" id="burger-icon" onclick="burgerClick()">
+            </div>
+            <div id="logo">
+                <img src="./images/Geri.png" alt="logo">
+            </div>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Projects">Projects</a>
+                       <div class="dropdown">
+                        <ul>
+                            <li><a href="#Project-1">Facial Recognition System</a></li>
+                            <li><a href="#Project-2">TPLEX Incident Management System</a></li>
+                        </ul>
+                       </div>
+                    </li>
+                    <li><a href="#Contact">Contact Information</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="https://www.facebook.com/gerinadine.cabie" target="_blank">Facebook</a></li>
+                                <li><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=gnmcabie@gmail.com&tf=1" target="_blank">Gmail</a></li>
+                                <li><a href="https://github.com/erinieeee" target="blank">GitHub</a></li>
+                                <li><a href="http://teams.microsoft.com/l/chat/0/0?users=21ur0281_ms@psu.edu.ph" target="_blank">Teams</a></li>
+                            </ul>
+                        </div>
+                        </li>
+               
+                    <li><a href="#About-Me">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Banner -->
+        <div id="hero-banner">
+            <span id="Home"></span>
+            <div id="filter">
+                <video src="./images/logo animation.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+        <!-- About Me -->
+        <div id="About-Me">
+            <h1>About Me</h1>
+                <div id="info">
+                <img src="images/profile.jpg" alt="profile">
+                <p>Hello, I'm Geri! I'm a 21-year-old college student currently in my third year at Pangasinan State University, where I'm pursuing my passion for computer engineering. I call the picturesque town of Rosario in Pozorrubio, Pangasinan, my hometown, which has instilled in me a deep appreciation for nature and the simple joys of life.
+                    During my academic journey, I've had the opportunity to explore the exciting worlds of Python and Java, thanks to my coursework. My goal is to further develop my programming skills and eventually contribute to innovative tech solutions that can make a positive impact on our society.</p>
+                   
+                </div>
+                
+            <a href="certificate.html" target="_blank"><button>Certificates</button></a>
+            <a id="downloadLink" href="#" download="resume.pdf"></a><button onclick="confirmDownload()">Download CV</button> </a>
+            
+        </div>
+
+        <div id="Projects">
+            <h1>Projects</h1>
+          <!--Flexbox Container-->
+          <div class="Project-Flex">
+            <div id="Project-1" class="Project">
+                <h2>Facial Recognition System Using Arduino</h2>
+                <img class="hover_pic" src="./images/facial-1.jpg" alt="Facial-Recognition">
+                <img class="thumbnail" src="./images/facial-2.jpg" alt="Facial-Recognition">
+                    <div class="description">
+                        <p>The "Facial Recognition Security System with Arduino and Python" project is designed to provide robust home security by utilizing advanced facial recognition technology. Its main objective is to allow authorized individuals seamless access to their homes based on their facial features. The system captures and analyzes facial data using Python and Arduino. </p>
+                    </div>
+                <a href="https://drive.google.com/file/d/1Ru_iNepFE20Pyo9K0i0cywOULi2Q3JsW/view?usp=share_link" target="_blank">Learn More</a>
+            </div> 
+    
+            <div id="Project-2" class="Project"> 
+                <h2>TPLEX Incident Management System</h2>
+                <img class="hover_pic" src="./images/IMS logo.jpg" alt="ims">
+                <img class="thumbnail" src="./images/ims-1.jpg" alt="ims">
+                    <div class="description">
+                        <p>In client partnership with TPLEX, the "TPLEX Incident Management System" project is designed to make filing and retrieving reports easier and more efficient as it minimizes human error and saves up resources. It is programmed in Java and uses MySql Server.</p>
+                    </div>
+                <a href="https://drive.google.com/file/d/1Wr2wSGxsqgCdOB6kciQHuw7K_Y_-dbwU/view?usp=drive_link" target="_blank">Learn More</a>
+            </div>
+            <div id="Project-3" class="Project">
+                <h2>Card Layout</h2>
+                <img class="hover_pic" src="./images/card-1.jpg" alt="card-layout">
+                <img class="thumbnail" src="./images/card-layout1.png" alt="card-layout">
+                    <div class="description">
+                        <p>This "Dr. Stone Character Card Layout" project is a tribute to the innovative spirit and resilience of the Dr. Stone characters. It's an invitation to step into their world and appreciate the blend of science, survival, and storytelling that the series embodies. Explore, learn, and be entertained by the captivating profiles of my favorite Dr. Stone characters.</p>
+                    </div>
+                <a href="https://erin-11111.github.io/dr-stone-card/" target="_blank">Learn More</a>
+            </div>
+            <div id="Project-4" class="Project">
+                <h2>Quiz Game</h2>
+                <img class="hover_pic" src="./images/quiz-1.jpg" alt="quiz-game">
+                <img class="thumbnail" src="./images/quiz-game1.png" alt="quiz-game">
+                    <div class="description">
+                        <p>Embark on a thrilling adventure in the world of Dr. Stone with my interactive "Dr. Stone Quiz Game." This project is designed to test your knowledge of the series, challenge your wits, and engage you in a fun and educational gaming experience.</p>
+                    </div>
+                <a href="https://erin-11111.github.io/quiz" target="_blank">Learn More</a>
+            </div>
+            </div>
+        </div>
+         
+    </main>
+
+    <footer>
+        <div id="Contact">
+            <div id="socmed">
+                <h1>Contact Me</h1>
+                <!--Icons Here-->
+                <ul>
+                    <li><a href="https://www.facebook.com/gerinadine.cabie" target="_blank"><img src="./images/facebook.png" alt="facebook logo"></a></li>
+                    <li><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=gnmcabie@gmail.com&tf=1" target="_blank"><img src="./images/email.png" alt="gmail"></a></li>
+                    <li><a href="https://github.com/erinieeee" target="blank"><img src="./images/github (1).png" alt="github-logo" srcset=""></a></li>
+                    <li><a href="http://teams.microsoft.com/l/chat/0/0?users=21ur0281_ms@psu.edu.ph" target="_blank"><img src="./images/ms-teams-logo.png" alt="teams" srcset=""></a></li>
+                </ul>
+            </div>
+            <div id="Form">
+                <form id="myForm" onsubmit="sendEmail(); reset; return">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Details"></textarea>
+                    <input type="submit" value="Submit" id="submit" required>
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>
