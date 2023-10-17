@@ -91,6 +91,7 @@
     text-align: center;
     font-size: 130%;
     text-indent: 5vw;
+    transition: all 1s ease;
 }
 #info{
     display: flex;
